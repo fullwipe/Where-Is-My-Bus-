@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="fullwipe.ciriitc.whereismybus.Main"
+    android:background="#FFFFFF"
+    android:theme="@style/AppBaseTheme" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" >
+
+        <ImageButton
+                android:id="@+id/topleft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            	android:layout_weight="0.5"
+                android:background="@drawable/m_topleft"
+                android:src="@anim/m_topleft"
+                android:contentDescription="Aggiungi profilo"
+                android:elevation="5dp" />
+
+        <ImageButton
+                android:id="@+id/topright"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            	android:layout_weight="0.5"
+                android:background="@drawable/m_topright"
+                android:src="@anim/m_topright"
+                android:contentDescription="Visualizza profili"
+                android:elevation="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" >
+        
+        <ImageButton
+                android:id="@+id/bottomleft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            	android:layout_weight="0.5"
+                android:background="@drawable/m_bottomleft"
+                android:src="@anim/m_bottomleft"
+                android:contentDescription="Cancella profilo"
+                android:elevation="5dp" />
+
+            <ImageButton
+                android:id="@+id/microphone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            	android:layout_weight="0.5"
+                android:background="@drawable/m_bottomright"
+                android:src="@anim/m_microphone"
+                android:contentDescription="Comandi Vocali"
+                android:elevation="5dp" />
+            
+        
+    </LinearLayout>
+
+</LinearLayout>

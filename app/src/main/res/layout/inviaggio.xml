@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="fullwipe.ciriitc.whereismybus.InViaggio">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Scendo dal bus"
+                android:id="@+id/iv_scendo" />
+
+            <fullwipe.ciriitc.whereismybus.utilities.CustomTextView
+                android:id="@+id/iv_tv00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fermata precedente:"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <fullwipe.ciriitc.whereismybus.utilities.CustomTextView
+                android:id="@+id/iv_tv0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <fullwipe.ciriitc.whereismybus.utilities.CustomTextView
+                android:id="@+id/iv_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prossima fermata:"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+
+            <fullwipe.ciriitc.whereismybus.utilities.CustomTextView
+                android:id="@+id/iv_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOME_FERMATA\na --- metri"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

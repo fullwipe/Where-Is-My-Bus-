@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fullwipe.ciriitc.whereismybus" >
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name=".utilities.Variables"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Getprofiledata"
+            android:label="@string/getprofdata" />
+        <activity
+            android:name=".Getrealtimedata"
+            android:label="@string/getrtdata" />
+        <activity
+            android:name=".Profili"
+            android:label="@string/profmem" />
+        <activity
+            android:name=".Cancella"
+            android:label="@string/cancprof" />
+        <activity
+            android:name=".Db_linee_sequenze_fermate"
+            android:label="@string/cancprof" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+
+        <activity
+            android:name=".InViaggio"
+            android:label="@string/title_activity_in_viaggio" >
+        </activity>
+
+        <activity
+            android:name=".ChiediDialog"
+            android:label="Dialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <service android:enabled="true" android:name=".utilities.FermateService" />
+    </application>
+
+</manifest>

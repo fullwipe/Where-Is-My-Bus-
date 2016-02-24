@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fullwipe.ciriitc.whereisbybus.Main" >
+
+    <item
+        android:id="@+id/credits"
+        android:title="@string/credits"
+        app:showAsAction="always|withText"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+    
+    <!--<item-->
+        <!--android:id="@+id/db"-->
+        <!--android:title="db"-->
+        <!--app:showAsAction="always|withText"-->
+        <!--android:icon="@android:drawable/ic_menu_info_details"/>-->
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lladd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lladd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/sceltaGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:contentDescription="Cerca in base alla tua attuale posizione tramite GPS"
+                android:text="Posizione attuale GPS" />
+
+            <RadioButton
+                android:id="@+id/radio_ind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Cerca in base all&apos;indirizzo inserito"
+                android:text="Indirizzo" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llnogps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/selType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/seltype" />
+
+            <AutoCompleteTextView
+                android:id="@+id/indirizzo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Indirizzo"
+                android:elevation="5dp" />
+
+            <Spinner
+                android:id="@+id/selTown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/seltown" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tempomax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tempo massimo (in minuti)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/infotm"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:text="@string/infotempomax"
+            android:textColor="@drawable/agg_infotm" />
+
+        <Button
+            android:id="@+id/agg_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avanti" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lladd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digita qui il nome del profilo"
+            android:elevation="5dp" />
+
+        <Button
+            android:id="@+id/agg_ind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Torna indietro" />
+
+        <Button
+            android:id="@+id/add2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aggiungi" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/annullatutto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annulla creazione profilo"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
